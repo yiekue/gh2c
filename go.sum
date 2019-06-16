@@ -1,4 +1,4 @@
-github.com/golang/net v0.0.0-20180826012351-8a410e7b638d h1:XXZ0nKFacC83c+kBG0i/rJdPj9HtnO0OKefFKaELC1M=
-github.com/golang/net v0.0.0-20180826012351-8a410e7b638d/go.mod h1:98y8FxUyMjTdJ5eOj/8vzuiVO14/dkJ98NYhEPG8QGY=
+github.com/golang/net v0.0.0-20190206173232-65e2d4e15006 h1:o/E2Hb/fM0UKA4XalcrbD9il5eed/flZhreRt7Iqpb8=
+github.com/golang/net v0.0.0-20190206173232-65e2d4e15006/go.mod h1:98y8FxUyMjTdJ5eOj/8vzuiVO14/dkJ98NYhEPG8QGY=
 github.com/golang/text v0.3.0 h1:uI5zIUA9cg047ctlTptnVc0Ghjfurf2eZMFrod8R7v8=
 github.com/golang/text v0.3.0/go.mod h1:GUiq9pdJKRKKAZXiVgWFEvocYuREvC14NhI4OPgEjeE=
