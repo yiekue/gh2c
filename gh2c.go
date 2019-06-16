@@ -50,6 +50,9 @@ func printReqInfo(req *http.Request) {
 		fmt.Println("<", req.Method, "HTTP/1.1", req.URL.RequestURI())
 	case 2:
 		fmt.Println("<", req.Method, "HTTP/2.0", req.URL.RequestURI())
+	default:
+		fmt.Println("error: unkown http version:", *version)
+		usageAndExit()
 	}
 
 	fmt.Println("< Host:", req.Host)
@@ -111,6 +114,9 @@ func main() {
 		client.Transport = &http2.Transport{
 			TLSClientConfig: tlsConfig,
 		}
+	default:
+		fmt.Println("error: unkown http version:", *version)
+		usageAndExit()
 	}
 
 	req, err := http.NewRequest(*method, url, nil)
