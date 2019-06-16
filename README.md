@@ -60,7 +60,7 @@ Usage: ./gh2c -[flags] url
 > Expires: Mon, 17 Jun 2019 04:39:54 GMT
 > Powered-By-Chinacache: HIT from CMN-CD-b-3g3
 > Content-Type: text/html
-<
+>
 ```
 自定义host替代默认的host
 ```
@@ -76,7 +76,7 @@ Usage: ./gh2c -[flags] url
 > Content-Length: 162
 > Server: nginx
 > Date: Sun, 16 Jun 2019 08:12:28 GMT
-<
+>
 ```
 使用http 1.1发送请求，默认是使用http2：
 ```
@@ -99,5 +99,5 @@ Usage: ./gh2c -[flags] url
 > Powered-By-Chinacache: HIT from CMN-CD-b-3g3
 > Cc_cache: TCP_HIT
 > Accept-Ranges: bytes
-<
+>
 ```

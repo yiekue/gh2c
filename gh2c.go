@@ -72,7 +72,7 @@ func printRespInfo(resp *http.Response) {
 			fmt.Printf("> %s: %s\n", k, v)
 		}
 	}
-	fmt.Println("<")
+	fmt.Println(">")
 }
 
 func main() {
