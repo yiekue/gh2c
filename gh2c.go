@@ -93,9 +93,12 @@ func main() {
 	// 设置是否需要检验服务端证书，默认不校验
 	tlsConfig := new(tls.Config)
 	if *verifyCert {
-		tlsConfig.InsecureSkipVerify = true
-	} else {
 		tlsConfig.InsecureSkipVerify = false
+		if *debug {
+			fmt.Printf("debug: need verify cert.\n")
+		}
+	} else {
+		tlsConfig.InsecureSkipVerify = true
 		if *debug {
 			fmt.Printf("debug: do not verify cert.\n")
 		}
@@ -163,6 +166,9 @@ func main() {
 	printRespInfo(resp)
 
 	if *outbody {
+		if *debug {
+			fmt.Println("debug: print resp.body")
+		}
 		body, err := ioutil.ReadAll(resp.Body)
 		if nil != err {
 			fmt.Println("error: failed to read body.")
